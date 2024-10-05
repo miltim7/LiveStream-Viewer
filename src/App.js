@@ -18,7 +18,7 @@ function App() {
 
   useEffect(() => {
     if (isStarted) {
-      socketRef.current = io('http://localhost:5000');
+      socketRef.current = io('http://localhost:5001');
 
       socketRef.current.on('connect', () => {
         console.log('Зритель подключился к серверу сигнализации');
